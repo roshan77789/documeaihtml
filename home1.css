@@ -1,0 +1,162 @@
+.explore p {
+    width: 100%;
+}
+
+.explore {
+    text-align: left;
+}
+
+.main-section {
+    padding-top: 20vh;
+}
+
+.main-section .col-md-6 img {
+    height: 500px;
+    object-fit: cover;
+    clip-path: polygon(25% 0, 80% 0%, 100% 0, 100% 75%, 75% 100%, 20% 100%, 0 100%, 0 25%);
+}
+
+.video-wrap video {
+    height: auto;
+    width: 100%;
+    position: static;
+}
+
+.footer-section img {
+    height: 120px;
+}
+
+.footer-section {
+    padding: 20px 0 !important;
+}
+
+.footer-section p {
+    font-size: 18px;
+}
+
+.footer-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section .footer-icons {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.footer-section .footer-icons a {
+    color: var(--primary-color);
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    transition: .3s;
+}
+
+
+.footer-section .footer-icons a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.faq-section {
+    padding-top: 200px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-icons a {
+    background-color: var(--secondary-color);
+    color: white;
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.header-icons a i {
+    font-size: 14px;
+}
+
+.main-btn .button_su {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 1024px){
+    .main-section .col-md-6 img{
+        height: 400px;
+    }
+}
+
+@media(max-width: 768px){
+    .main-section .col-md-6 img{
+        height: 300px;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+
+    .header .logo img{
+        height: 50px;
+    }
+
+    .main-section{
+        padding-top: 12vh;
+    }
+
+    .main-section .row{
+        flex-direction: column-reverse;
+    }
+
+    .explore p {
+        width: 100%;
+    }
+    
+    .explore {
+        text-align: center;
+    }
+
+    .main-btn{
+        padding-bottom: 30px;
+    }
+
+    .video-wrap video{
+        margin: 0;
+    }
+
+    .about-section .about-right img {
+        height: 300px;
+    }
+
+
+    .about-section {
+        padding-bottom: 270px;
+    }
+
+    .features-section img {
+        height: 250px;
+    }
+
+    .feature{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 525px){
+    .main-section .col-md-6 img{
+        width: 100%;
+        margin-left: 0%;
+        }
+}

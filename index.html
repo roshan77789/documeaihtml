@@ -3,94 +3,1579 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
+    <title>Documee</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
   </head>
   <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./Assets/logo-documee.png" alt="logo" />
+        </a>
+
+
+        <nav class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="index.html">Home</a>
+              <i class="bi bi-chevron-down ml-5"></i>
+            </button>
+            <div class="dropdown-content">
+              <div class="button_su btn-bg-primary">
+                <span class="su_button_circle"></span>
+                <a href="home1.html" class="button_su_inner">
+                  <span class="button_text_container">Home 1</span>
+                </a>
+              </div>
+              <div class="button_su btn-bg-primary">
+                <span class="su_button_circle"></span>
+                <a href="home2.htm" class="button_su_inner">
+                  <span class="button_text_container">Home 2</span>
+                </a>
+              </div>
+              <div class="button_su btn-bg-primary">
+                <span class="su_button_circle"></span>
+                <a href="home3.html" class="button_su_inner">
+                  <span class="button_text_container">Hom3 3</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#about-section">About Us</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="#why-section">Why DocuMee AI </a>
+              <i class="bi bi-chevron-down ml-5"></i>
+            </button>
+            <div class="dropdown-content">
+              <div class="button_su btn-bg-primary">
+                <span class="su_button_circle"></span>
+                <a href="#features-section" class="button_su_inner">
+                  <span class="button_text_container">Our Features</span>
+                </a>
+              </div>
+              <div class="button_su btn-bg-primary">
+                <span class="su_button_circle"></span>
+                <a href="#blog-section" class="button_su_inner">
+                  <span class="button_text_container">Blogs</span>
+                </a>
+              </div>
+              <div class="button_su btn-bg-primary">
+                <span class="su_button_circle"></span>
+                <a href="#reviews-section" class="button_su_inner">
+                  <span class="button_text_container">Testimonials</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#contact-section">Contact Us</a>
+          <a href="#pricing-section">Choose Your Plan</a>
+          <a href="#faq-section">FAQs</a>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="mobile-navbar" id="mobile-navbar">
+      <i class="bi bi-x"></i>
+      <div class="button_su btn-bg-primary">
+        <span class="su_button_circle"></span>
+        <a href="#about-section" class="button_su_inner">
+          <span class="button_text_container">About Us</span>
+        </a>
+      </div>
+      <div class="button_su btn-bg-primary">
+        <span class="su_button_circle"></span>
+        <a href="#why-section" class="button_su_inner">
+          <span class="button_text_container">Why Choose Us</span>
+        </a>
+      </div>
+      <div class="button_su btn-bg-primary">
+        <span class="su_button_circle"></span>
+        <a href="#features-section" class="button_su_inner">
+          <span class="button_text_container">Our Features</span>
+        </a>
+      </div>
+      <div class="button_su btn-bg-primary">
+        <span class="su_button_circle"></span>
+        <a href="#reviews-section" class="button_su_inner">
+          <span class="button_text_container">Testimonials</span>
+        </a>
+      </div>
+      <div class="button_su btn-bg-primary">
+        <span class="su_button_circle"></span>
+        <a href="#pricing-section" class="button_su_inner">
+          <span class="button_text_container">Choose Your Plan</span>
+        </a>
+      </div>
+      <div class="button_su btn-bg-primary">
+        <span class="su_button_circle"></span>
+        <a href="#blog-section" class="button_su_inner">
+          <span class="button_text_container">Our Blogs</span>
+        </a>
+      </div>
+      <div class="button_su btn-bg-primary">
+        <span class="su_button_circle"></span>
+        <a href="#faq-section" class="button_su_inner">
+          <span class="button_text_container">FAQs</span>
+        </a>
+      </div>
+      <div class="button_su btn-bg-primary">
+        <span class="su_button_circle"></span>
+        <a href="#contact-section" class="button_su_inner">
+          <span class="button_text_container">Contact Us</span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="main-section">
+      <div class="container">
+        <div class="explore">
+          <h6>Revolutionizing Your Project Documentation with AI</h6>
+          <h1 id="dynamic-text">Hi, I'm DocuMee</h1>
+          <p>
+            DocuMee AI is an intelligent document management solution that
+            streamlines document creation, organization, and analysis using
+            advanced AI technology.
+          </p>
+          <div class="main-btn">
+            <div class="button_su btn-bg-primary">
+              <span class="su_button_circle"> </span>
+              <a href="#" class="button_su_inner">
+                <span class="button_text_container">
+                  <i class="bi bi-download"></i> Windows
+                </span>
+              </a>
+            </div>
+            <div class="button_su btn-bg-primary">
+              <span class="su_button_circle"> </span>
+              <a href="#" class="button_su_inner">
+                <span class="button_text_container">
+                  <i class="bi bi-download"></i> Mac OS
+                </span>
+              </a>
+            </div>
+            <div class="button_su btn-bg-primary">
+              <span class="su_button_circle"> </span>
+              <a href="#" class="button_su_inner">
+                <span class="button_text_container">
+                  <i class="bi bi-download"></i> Linux
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="video-wrap">
+          <video loop>
+            <source
+              src="./Assets/file_example_MP4_1920_18MG.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+    </section>
+
+    <section class="about-section" id="about-section">
+      <div class="container">
+        <div class="about-left">
+          <img
+            src="./Assets/0_T_FjCVecjNEQFJQO.png"
+            alt="app Image"
+            class="goes-to-left"
+          />
+        </div>
+        <div class="about-right">
+          <span class="goes-down">A Few Words</span>
+          <h2 class="section-heading goes-down">About the App</h2>
+          <p class="goes-down">
+            At DocuMee, we are dedicated to transforming project documentation
+            through innovative AI solutions. Our mission is to simplify the
+            documentation process, enhance collaboration, and empower teams with
+            real-time insights. We believe that effective documentation is key
+            to achieving business success, and we’re here to help you streamline
+            and elevate your workflow.
+          </p>
+          <img
+            class="goes-down"
+            src="./Assets/artificial-intelligence-and-document-management-system.jpg"
+            alt="image app 2"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section" id="why-section">
+      <div class="container">
+        <h2 class="section-heading">Why DocuMee AI ?</h2>
+
+        <div class="why-wrapper">
+          <div class="why-left goes-to-left">
+            <div class="smile-icon">
+              <i class="bi bi-emoji-smile"></i>
+            </div>
+            <span>Without DocuMee AI</span>
+            <p>
+              <i class="bi bi-x"></i>Your business struggles with fragmented
+              project documentation.
+            </p>
+            <p>
+              <i class="bi bi-x"></i>
+              You spend valuable time on manual documentation tasks.
+            </p>
+            <p>
+              <i class="bi bi-x"></i>
+              New team members face lengthy onboarding processes.
+            </p>
+            <p>
+              <i class="bi bi-x"></i>
+              High costs arise from relying on technical writers.
+            </p>
+            <p>
+              <i class="bi bi-x"></i>
+              Project status and updates are not easily visible.
+            </p>
+          </div>
+          <div class="why-right goes-to-right">
+            <div class="smile-icon">
+              <i class="bi bi-emoji-smile"></i>
+            </div>
+            <span>With DocuMee AI</span>
+            <p>
+              <i class="bi bi-check"></i>You can seamlessly integrate
+              documentation with tools like JIRA and GitHub.
+            </p>
+            <p>
+              <i class="bi bi-check"></i> Automatic generation and updating of
+              documentation save time.
+            </p>
+            <p>
+              <i class="bi bi-check"></i> Onboarding for new hires is
+              accelerated by 50%.
+            </p>
+            <p>
+              <i class="bi bi-check"></i>
+              Significant cost savings reduce the need for technical writers.
+            </p>
+            <p>
+              <i class="bi bi-check"></i>
+              Real-time updates keep documentation accurate and current.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section" id="features-section">
+      <div class="container">
+        <span>NEW POSSIBILITIES</span>
+        <h2 class="section-heading">Features</h2>
+
+        <div class="row align-items-center feature">
+          <div class="col-md-6">
+            <img
+              src="Assets/Walkthrough-GitHub-Jira.png"
+              alt="Feature 1"
+              class="img-fluid rounded shadow-lg"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>JIRA and GitHub Sync</h3>
+            <h5>Seamless Integration</h5>
+            <p>
+              Effortlessly capture all project-related information and code
+              changes by connecting DocuMee with your existing tools.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center feature">
+          <div class="col-md-6">
+            <img
+              src="Assets/Shutterstock_2315533401.png"
+              alt="Feature 2"
+              class="img-fluid rounded shadow-lg"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>AI Summarization</h3>
+            <h5>Quick Insights</h5>
+            <p>
+              Transform complex documents into clear, concise summaries for
+              easier understanding and quicker access to information.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center feature">
+          <div class="col-md-6">
+            <img
+              src="Assets/Illustration - version control tracks changes over time.png"
+              alt="Feature 3"
+              class="img-fluid rounded shadow-lg"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Version Control Tracking</h3>
+            <h5>Stay Updated</h5>
+            <p>
+              Automatically link code changes to relevant project documentation,
+              ensuring that all updates are reflected in real time.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center feature">
+          <div class="col-md-6">
+            <img
+              src="Assets/55-Best-Online-Collaboration-Tools-Software-for-Teams-2023.png"
+              alt="Feature 4"
+              class="img-fluid rounded shadow-lg"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Collaboration Tools</h3>
+            <h5>Empower Your Team</h5>
+            <p>
+              Empower your team with integrated collaboration features that
+              connect project tasks, code commits, and documentation, fostering
+              seamless communication and teamwork across all projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center feature">
+          <div class="col-md-6">
+            <img
+              src="Assets/Atlassian-Confluence-Integration-Page-07.png"
+              alt="Feature 5"
+              class="img-fluid rounded shadow-lg"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Confluence Integration</h3>
+            <h5>Effortless Publishing</h5>
+            <p>
+              Seamlessly publish polished documentation to Confluence, making it
+              accessible to your entire team in just seconds.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center feature">
+          <div class="col-md-6">
+            <img
+              src="Assets/blog-why-advanced-search-engines-are-the-future-of-search-1200.jpg"
+              alt="Feature 6"
+              class="img-fluid rounded shadow-lg"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Advanced Search</h3>
+            <h5>Quick Access</h5>
+            <p>
+              Find exactly what you need with an advanced search feature,
+              reducing time spent sifting through outdated documents.
+            </p>
+          </div>
+        </div>
+        <div class="features-integration">
+          <h4 class="text-center">Effortless Integration</h4>
+          <p class="text-center">
+            Quickly connect DocuMee with JIRA and GitHub to automatically sync
+            project information and code changes. Enjoy a unified source of
+            truth with seamless documentation updates!
+          </p>
+        </div>
+        <div class="features-integration-image">
+          <img src="./Assets/GitHub_logo_2013.png" alt="GitHub_logo" />
+          <img src="./Assets/images-removebg-preview.png" alt="JIRA" />
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews-section">
+      <div class="wrapper" id="wrapper">
+        <div class="quote-row">
+          <div class="quote-column col-active show">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQzfHxwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Tom hawck</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-column">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Harry john</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-column">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Larry Will</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-column">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Augustine</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-column">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Jack Danny</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-column">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1504439904031-93ded9f93e4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Luich Harry</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-column">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA3fHxwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Alisha Angela</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-column">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE5fHxwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Lofy Sthamam</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-column">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1557053910-d9eadeed1c58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI2fHxwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Angela Baby</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-column">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM1fHxwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Hanry Harry</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-column">
+            <div class="col-inner">
+              <div class="author-meta">
+                <div class="box-image-inner image-cover">
+                  <img
+                    src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cm9ib3R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  />
+                </div>
+                <div class="author-info">
+                  <div class="author-name">
+                    <p class="person-name">Dlang Dhal</p>
+                  </div>
+                  <div class="author-status">
+                    <p class="person-title">IT Solution Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quote-wrapper">
+                <div class="quote-symbol">❛</div>
+                <div class="box-text-inner">
+                  <p>
+                    Since integrating DocuMee, our documentation process has
+                    been revolutionized. We've reduced our documentation time by
+                    75%, and onboarding new team members is now much faster and
+                    smoother. It's truly a game-changer for our organization!
+                  </p>
+                </div>
+                <div class="quote-symbol">❜</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section" id="pricing-section">
+      <div class="container">
+        <h2 class="section-heading">Pricing</h2>
+
+        <div class="price-plan">
+          <div id="price">
+            <!--price tab-->
+            <div class="plan personal">
+              <div class="plan-inner">
+                <div class="entry-title">
+                  <h3>Starter Plan</h3>
+                  <div class="price">$29</div>
+                </div>
+                <div class="entry-content">
+                  <ul>
+                    <li><strong>Up to</strong> 5 Projects</li>
+                    <li><strong>Basic AI Summarization</strong></li>
+                    <li><strong>Markdown Support</strong></li>
+                    <li><strong>Basic Search</strong> Functionality</li>
+                    <li><strong>Email</strong> Support</li>
+                  </ul>
+                </div>
+                <div class="button_su">
+                  <span class="su_button_circle"> </span>
+                  <a href="#" class="button_su_inner">
+                    <span class="button_text_container"> Get Started </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- end of price tab-->
+
+            <!--price tab-->
+            <div class="plan business">
+              <div class="plan-inner">
+                <div class="entry-title">
+                  <h3>Team Plan</h3>
+                  <div class="price">$79</div>
+                </div>
+                <div class="entry-content">
+                  <ul>
+                    <li><strong>Up to</strong> 15 Projects</li>
+                    <li><strong>Advanced AI Summarization</strong></li>
+                    <li><strong>Version Control Tracking</strong></li>
+                    <li><strong>Priority Support</strong></li>
+                    <li><strong>Collaborative Tools</strong></li>
+                  </ul>
+                </div>
+                <div class="button_su btn-bg-primary">
+                  <span class="su_button_circle"> </span>
+                  <a href="#" class="button_su_inner">
+                    <span class="button_text_container"> Get Started </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- end of price tab-->
+
+            <!--price tab-->
+            <div class="plan enterprise">
+              <div class="plan-inner">
+                <div class="entry-title">
+                  <h3>Enterprise Plan</h3>
+                  <div class="price">$149</div>
+                </div>
+                <div class="entry-content">
+                  <ul>
+                    <li><strong>Unlimited Projects</strong></li>
+                    <li><strong>Full AI Capabilities</strong></li>
+                    <li><strong>Customizable Templates</strong></li>
+                    <li><strong>Advanced Search</strong> Features</li>
+                    <li><strong>Dedicated Account Manager</strong></li>
+                  </ul>
+                </div>
+                <div class="button_su btn-bg-primary">
+                  <span class="su_button_circle"> </span>
+                  <a href="#" class="button_su_inner">
+                    <span class="button_text_container"> Get Started </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- end of price tab-->
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-area">
+        <div class="container">
+          <div class="row cta-content">
+            <div class="col-lg-7 col-md-7 col-12">
+              <h2>Transform Your Document Management</h2>
+              <p>
+                Get a personalized quote today and enhance your workflow with
+                docuMee.
+              </p>
+            </div>
+            <div class="col-lg-5 col-md-5 col-12">
+              <div class="subscribe-form">
+                <h6>Subscribe to Our Newsletter</h6>
+                <form
+                  action="https://iideainformatics.it/html/soltrin/index.html"
+                >
+                  <input type="email" placeholder="Your email" required />
+                  <button type="submit">
+                    <i class="bi bi-envelope-fill"></i>
+                  </button>
+                </form>
+                <p>
+                  Stay updated with the latest news and offers from docuMee!
+                </p>
+                <div class="mt-4">
+                  <div class="button_su btn-bg-primary">
+                    <span class="su_button_circle"> </span>
+                    <a href="#" class="button_su_inner">
+                      <span class="button_text_container"> Get a quote </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section" id="blog-section">
+      <div class="blog-area section-padding">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 wow fadeInUp" data-wow-delay=".2s">
+              <div class="section-title text-center">
+                <h6>Unlocking the Future of Document Management</h6>
+                <h2 class="section-heading">AI Insights</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 col-12 goes-to-left">
+              <div class="single-blog wow fadeInLeft" data-wow-delay=".3s">
+                <a href="#" class="blog-img">
+                  <img
+                    src="./Assets/Effective-file-management-tips-to-keep-your-files-organized-and-secure.jpg"
+                    class="img-fluid"
+                    alt="DocuMee Overview"
+                  />
+                </a>
+                <div class="blog-content">
+                  <span
+                    ><a href="./blogDetail.html">Document Management</a></span
+                  >
+                  <h3>
+                    <a href="./blogDetail.html"
+                      >Maximize Efficiency with AI-Powered Document Solutions</a
+                    >
+                  </h3>
+                  <div class="blog-date">
+                    <p>September 30, 2024</p>
+                  </div>
+                  <a href="./blogDetail.html" class="read-more">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 goes-down">
+              <div class="single-blog wow fadeInLeft" data-wow-delay=".5s">
+                <a href="./blogDetail.html" class="blog-img">
+                  <img
+                    src="Assets/Artificial-Intelligence-in-Digital-Document-Management-What-to-Expect_6_11zon.png"
+                    class="img-fluid"
+                    alt="DocuMee Features"
+                  />
+                </a>
+                <div class="blog-content">
+                  <span><a href="#">Features</a></span>
+                  <h3>
+                    <a href="./blogDetail.html"
+                      >Top Features of DocuMee You Need to Know</a
+                    >
+                  </h3>
+                  <div class="blog-date">
+                    <p>September 28, 2024</p>
+                  </div>
+                  <a href="./blogDetail.html" class="read-more">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 goes-to-right">
+              <div class="single-blog wow fadeInLeft" data-wow-delay=".7s">
+                <a href="./blogDetail.html" class="blog-img">
+                  <img
+                    src="Assets/Artificial-Intelligence-Image.jpg"
+                    class="img-fluid"
+                    alt="DocuMee Tips"
+                  />
+                </a>
+                <div class="blog-content">
+                  <span><a href="./blogDetail.html">Tips</a></span>
+                  <h3>
+                    <a href="./blogDetail.html"
+                      >How Efficient Document Management Can Boost
+                      Productivity</a
+                    >
+                  </h3>
+                  <div class="blog-date">
+                    <p>September 25, 2024</p>
+                  </div>
+                  <a href="./blogDetail.html" class="read-more">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq-section">
+      <div class="container">
+        <div class="w-lg-50 mx-auto">
+          <h6 class="mb-2">Your Guide to Understanding docuMee AI</h6>
+          <h2 class="mb-5 section-heading">Have a Question ?</h2>
+          <div class="accordion accordion-flush" id="accordionExample">
+            <!-- 1: coll1 -->
+            <div class="accordion-item">
+              <span class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#coll1"
+                  aria-expanded="true"
+                  aria-controls="coll1"
+                >
+                  <h5>What is DocuMee?</h5>
+                </button>
+              </span>
+              <div
+                id="coll1"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  DocuMee is an AI-powered documentation tool that integrates
+                  with platforms like JIRA and GitHub to automate and streamline
+                  project documentation, ensuring that information is always
+                  current and easily accessible.
+                </div>
+              </div>
+            </div>
+
+            <!-- 2: coll2 -->
+            <div class="accordion-item">
+              <span class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#coll2"
+                  aria-expanded="false"
+                  aria-controls="coll2"
+                >
+                  <h5>How does DocuMee integrate with my existing tools?</h5>
+                </button>
+              </span>
+              <div
+                id="coll2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  DocuMee connects effortlessly with JIRA and GitHub, syncing
+                  project-related information and code changes with just a few
+                  clicks, allowing for real-time documentation updates.
+                </div>
+              </div>
+            </div>
+
+            <!-- 3: coll3 -->
+            <div class="accordion-item">
+              <span class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#coll3"
+                  aria-expanded="false"
+                  aria-controls="coll3"
+                >
+                  <h5>Can DocuMee help with onboarding new team members?</h5>
+                </button>
+              </span>
+              <div
+                id="coll3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Absolutely! DocuMee reduces onboarding time by providing new
+                  hires with clear, up-to-date documentation, making it easier
+                  for them to understand existing projects and processes.
+                </div>
+              </div>
+            </div>
+
+            <!-- 4: coll4 -->
+            <div class="accordion-item">
+              <span class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#coll4"
+                  aria-expanded="false"
+                  aria-controls="coll4"
+                >
+                  <h5>Is my data secure with DocuMee?</h5>
+                </button>
+              </span>
+              <div
+                id="coll4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Yes, DocuMee prioritizes enterprise-grade security, ensuring
+                  that your sensitive information is protected while maintaining
+                  compliance with industry standards.
+                </div>
+              </div>
+            </div>
+
+            <!-- 5: coll5 -->
+            <div class="accordion-item">
+              <span class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#coll5"
+                  aria-expanded="false"
+                  aria-controls="coll5"
+                >
+                  <h5>Can I customize the documentation templates?</h5>
+                </button>
+              </span>
+              <div
+                id="coll5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Yes! DocuMee offers customizable templates that allow you to
+                  tailor your documentation to fit your organization’s branding
+                  and style, ensuring consistency across all materials.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-section section-padding" id="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="section-title">
+              <h6>We’re Here to Help You with Your AI Journey</h6>
+              <h2 class="section-heading">Get in Touch</h2>
+            </div>
+            <div class="contact_form">
+              <form
+                action="https://iideainformatics.it/html/soltrin/assets/inc/sendemail.php"
+                class="comment-one_form contact-form-validated"
+                novalidate="novalidate"
+              >
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div>
+                      <input type="text" placeholder="Your Name" name="name" />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div>
+                      <input
+                        type="email"
+                        placeholder="Email Address"
+                        name="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Phone Number"
+                        name="phone"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div>
+                      <input
+                        type="email"
+                        placeholder="Subject"
+                        name="Subject"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div>
+                      <textarea
+                        name="message"
+                        placeholder="Write a Message"
+                      ></textarea>
+                    </div>
+                    <div class="button_su btn-bg-primary">
+                      <span class="su_button_circle"> </span>
+                      <a href="#" class="button_su_inner">
+                        <span class="button_text_container">
+                          Simple button
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1">
+            <div class="contact-wrap goes-to-right">
+              <div class="contact-inner">
+                <div class="contact-headline">
+                  <h3>Get Appointment starting a New Project?</h3>
+                </div>
+                <div class="contact-meta-info">
+                  <div class="contact-single-info">
+                    <i class="bi bi-geo"></i>
+                    <h6>Address</h6>
+                    <p>248, Park Street Avenue, NY, USA</p>
+                  </div>
+                  <div class="contact-single-info">
+                    <i class="bi bi-telephone"></i>
+                    <h6>Phone</h6>
+                    <p>Mobile: +14+127893</p>
+                    <p>Hotline: +1235678</p>
+                  </div>
+                  <div class="contact-single-info">
+                    <i class="bi bi-envelope"></i>
+                    <h6>Phone</h6>
+                    <p>Mail: support@docuMee.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="footer-section">
+      <img src="./Assets/logo-documee.png" alt="logo">
+      <p>Copyright @ 2024 Documee</p>
+      <ul class="footer-icons">
+        
+      </ul>
+      <div class="container">
+        <span>START USING THE BEST APP</span>
+        <h2>Create a documentation instantly using Documee</h2>
+
+        <div class="footer-btn-wrap">
+          <div class="button_su">
+            <span class="su_button_circle"> </span>
+            <a href="#" class="button_su_inner">
+              <span class="button_text_container"> Simple button </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- back to top button  -->
+    <div class="go-top active">
+      <div class="pulse">
+        <i class="bi bi-chevron-up"></i>
+      </div>
+    </div>
+    <!-- back to top button  -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="arrow-down" viewBox="0 0 24 24">
+        <path d="M12 16l-4-4h8l-4 4z" />
+      </symbol>
+    </svg>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      let mobileWidth = 640
+      let tabWidth = 1080
+      let deskWidth = 1220
+      let pWidth, pHeight, screenWidth, screenHeight
+      let index = document.getElementsByClassName('quote-column')
+      let pTransition = 3
+      let activeShow = 'col-active'
+      const arrowIcon =
+        "<div class='arrow left-arrow ' onclick='arrowControl(-1)'><i class='arrow-icon'><i></div><div class='arrow right-arrow' onclick='arrowControl(1)'><i class='arrow-icon'><i></div>"
+      const ArrowParent = document.createElement('div')
+      ArrowParent.classList.add('arrows-wrap')
+      ArrowParent.innerHTML = arrowIcon
+      let arrowEnabled = false
+      let activeQuoteHeight = 400
+
+      getElem()
+      function getElem() {
+        let hAndW
+        let targetElem
+        index[0].parentElement.style.minHeight = (index.length / 2) * 140 + 'px' // assign row element height
+
+        for (let i = 0; i < index.length; i++) {
+          targetElem = index[i]
+          pWidth = targetElem.parentElement.offsetWidth
+          pHeight = targetElem.parentElement.offsetHeight
+
+          //When viewing on desktop
+          if (screenWidth > tabWidth) {
+            hAndW = randomPos(60, screenHeight / (index.length / 1.5)) + 'px' //Lets make the height and width variables randomly
+
+            // lets devide all the elements by less then 2 and positioning them left and right not in the middle;
+            //this is for left side
+            if (i < index.length / 1.9) {
+              targetElem.style.left =
+                randomPos(100, targetElem.parentElement.offsetWidth / 3 - 100) +
+                'px' // X position left
+              targetElem.style.top =
+                (targetElem.parentElement.offsetHeight / (index.length / 2)) *
+                  (i - 1) +
+                'px' //Y position left
+            }
+            // this is for right side
+            else if (i > index.length / 1.9) {
+              targetElem.style.right =
+                randomPos(100, targetElem.parentElement.offsetWidth / 3 - 100) +
+                'px' // X position right
+              targetElem.style.left = 'auto' // X position right
+              targetElem.style.top =
+                (targetElem.parentElement.offsetHeight / (index.length / 2)) *
+                  (index.length - 1 - i) +
+                'px' //Y position right
+            }
+            if (arrowEnabled) ArrowParent.style.display = 'block'
+            // When arrow added make them visible
+            else ArrowParent.style.display = 'none' // When arrow added make them hidden
+          }
+
+          //When viewing on tab
+          if (screenWidth <= tabWidth && screenWidth >= mobileWidth) {
+            hAndW = randomPos(30, screenHeight / (index.length / 1.5)) + 'px'
+            targetElem.parentElement.style.minHeight = '70vh'
+            targetElem.style.bottom = '0px' //Y position
+            targetElem.style.left =
+              (targetElem.parentElement.offsetWidth / (index.length - 1)) *
+                (i - 1) +
+              'px' // X position left
+            targetElem.style.zIndex = '100' //Y position
+            targetElem.style.top = 'auto' //Y position
+            if (arrowEnabled) ArrowParent.style.display = 'block'
+            // When arrow added make them visible
+            else ArrowParent.style.display = 'none' // When arrow added make them visible
+          }
+
+          //When viewing on mobile
+          if (screenWidth < mobileWidth) {
+            targetElem.style.left = '50%' // X position left
+            ArrowParent.style.display = 'block' // When arrow added make them visible
+          } else if (!arrowEnabled) ArrowParent.style.display = 'none' // otherwise hidden
+
+          //after all the work done lets sizing the element
+          targetElem.style.width = hAndW
+          targetElem.style.height = hAndW
+          //and the active one position default
+          if (i != 0) {
+            targetElem.addEventListener('click', quoteShow, false) //So we dont need click event on the active one
+          }
+          targetElem.classList.add('moves')
+        }
+        setTimeout(() => {
+          for (let i = 0; i < index.length; i++) {
+            //     targetElem.style.transition = "0s";
+          }
+        }, 2000)
+      }
+
+      let clickCheck = true,
+        showClear,
+        showClear2
+      function quoteShow(evt) {
+        const style = getComputedStyle(this)
+        console.log(style)
+        if (clickCheck) {
+          clickCheck = false
+          clearTimeout(showClear2)
+          let activeQuote = document.getElementsByClassName(activeShow)
+          let aq
+          for (let j = 0; j < activeQuote.length; j++) {
+            aq = activeQuote[j]
+            aq.classList.remove('show')
+            aq.style.transition = '0.4s'
+          }
+          this.style.transition = '0.4s'
+          setTimeout(() => {
+            aq.style.top = this.offsetTop + 'px'
+            aq.style.left = this.offsetLeft + 'px'
+            aq.style.width = this.offsetWidth + 'px'
+            aq.style.height = this.offsetHeight + 'px'
+            aq.addEventListener('click', quoteShow, false)
+            aq.classList.remove(activeShow)
+          }, 600)
+
+          setTimeout(() => {
+            this.classList.add(activeShow)
+            this.removeEventListener('click', quoteShow, false)
+          }, 1200)
+
+          showClear2 = setTimeout(() => {
+            this.classList.toggle('show')
+            aq.style.transition = ''
+            this.style.transition = ''
+            clickCheck = true
+          }, 1800)
+        }
+      }
+
+      let arrowClicked = true
+      nowActive = 0
+
+      function arrowControl(val) {
+        // else nowActive += val;
+        if (arrowClicked) {
+          arrowClicked = false
+          for (let i = 0; i < index.length; i++) {
+            index[nowActive].classList.remove('show')
+            index[nowActive].style.transition = '.4s'
+            index[nowActive].addEventListener('click', quoteShow, false)
+          }
+          setTimeout(() => {
+            for (let j = 0; j < index.length; j++) {
+              index[j].classList.remove(activeShow)
+            }
+            nowActive += val
+            if (nowActive > index.length - 1) nowActive = 0
+            else if (nowActive < 0) nowActive = index.length - 1
+          }, 600)
+
+          setTimeout(() => {
+            index[nowActive].classList.add(activeShow)
+            index[nowActive].removeEventListener('click', quoteShow, false)
+          }, 610)
+
+          setTimeout(() => {
+            index[nowActive].classList.toggle('show')
+            index[nowActive].style.transition = ''
+            arrowClicked = true
+          }, 1800)
+        }
+      }
+
+      function randomPos(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min
+      }
+
+      function getScreenSize() {
+        screenWidth = window.innerWidth
+        screenHeight = window.innerHeight
+        getElem()
+      }
+
+      window.onresize = getScreenSize
+      window.addEventListener('resize', getScreenSize)
+      window.addEventListener(
+        'load',
+        function () {
+          getScreenSize()
+          getElem()
+        },
+        true
+      )
+
+      function arrowFunc() {
+        try {
+          index[0].parentElement.appendChild(ArrowParent) // try insert arrow element for slide control
+        } catch (error) {}
+      }
+      arrowFunc()
+
+      //Flaoting animation class;
+      class MoveAnim {
+        constructor(max, tm) {
+          this.time = tm
+          if (Math.random() > 0.5) this.uDVal = max
+          else this.uDVal = 0
+          if (Math.random() > 0.5) this.lRVal = max
+          else this.lRVal = 0
+          this.max = max
+          if (Math.random() > 0.5) this.uD = false
+          else this.uD = true
+          if (Math.random() > 0.5) this.lR = false
+          else this.lR = true
+          this.upDown(this.max)
+          this.leftRight(this.max)
+          this.scale = 0.01
+        }
+
+        upDown() {
+          setInterval(() => {
+            if (!this.uDVal) {
+              if (this.uD >= this.max) {
+                this.uDVal = true
+              }
+              if (this.uD < this.max) {
+                this.uD += this.scale
+              }
+            } else if (this.uDVal) {
+              if (this.uD <= -this.max) {
+                this.uDVal = false
+              }
+              if (this.uD >= -this.max) {
+                this.uD -= this.scale
+              }
+            }
+            return this.uD
+          }, this.time / 1000)
+        }
+        leftRight() {
+          setInterval(() => {
+            if (!this.lRVal) {
+              if (this.lR >= this.max) {
+                this.lRVal = true
+              }
+              if (this.lR < this.max) {
+                this.lR += this.scale
+              }
+            } else if (this.lRVal) {
+              if (this.lR <= -this.max) {
+                this.lRVal = false
+              }
+              if (this.lR >= -this.max) {
+                this.lR -= this.scale
+              }
+            }
+            return this.lR
+          }, this.time / 1000)
+        }
+
+        letMove(el, ud = false, lr = false) {
+          setInterval(() => {
+            if (ud === true && lr === false) {
+              el.style.transform =
+                'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, ' +
+                0 +
+                ',' +
+                this.uD +
+                ', 0, 1)'
+            } else if (ud === false && lr === true) {
+              el.style.transform =
+                'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, ' +
+                this.lR +
+                ',' +
+                0 +
+                ', 0, 1)'
+            } else {
+              el.style.transform =
+                'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, ' +
+                this.lR +
+                ',' +
+                this.uD +
+                ', 0, 1)'
+            }
+          }, 1)
+        }
+
+        start(elem, ud, lr) {
+          this.letMove(elem, ud, lr)
+          this.upDown()
+          this.leftRight()
+        }
+      }
+
+      class ShowAnim {
+        constructor(mElem, dist, times) {
+          this.mElem = document.getElementsByClassName(mElem)
+          this.pElem = mElem.parentElement
+          this.cElem = mElem.children
+          this.count = 0
+          this.max = dist
+          this.min = 10
+          this.times = times
+          this.randomCount(this.max)
+        }
+        randomCount(max) {
+          return Math.floor(Math.random() * (max - this.min + 1)) + this.min
+        }
+        show(ud, lr) {
+          for (this.count = 0; this.count < this.mElem.length; this.count++) {
+            this.moveanim = new MoveAnim(this.randomCount(this.max), this.times)
+            this.moveanim.start(this.mElem[this.count], ud, lr)
+          }
+        }
+      }
+
+      let animShow = new ShowAnim('moves', 40, 50) // Element, Max Distance, Times in milliseconds
+
+      //Start floating
+      animShow.show(true, true) // Up-Down, Left-Right;
+    </script>
   </body>
 </html>
